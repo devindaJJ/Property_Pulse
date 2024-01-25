@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+ 	<welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+    <!-- User Login -->
+    <servlet>
+        <servlet-name>LoginServletByName</servlet-name>
+        <servlet-class>com.bs.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServletByName</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    
+    <!-- User Registration -->
+    <servlet>
+        <servlet-name>RegisterServletByName</servlet-name>
+        <servlet-class>com.bs.servlet.registerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServletByName</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- User Update -->
+	<servlet>
+        <servlet-name>UpdateServlet</servlet-name>
+        <servlet-class>com.bs.servlet.UpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateServlet</servlet-name>
+        <url-pattern>/updateCustomerServlet</url-pattern>
+    </servlet-mapping>    
+    
+    <!-- User Delete -->
+    <servlet>
+		<servlet-name>DeleteServleyByName</servlet-name>
+		<servlet-class>com.bs.servlet.deleteUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteServleyByName</servlet-name>
+		<url-pattern>/deleteuser</url-pattern>
+	</servlet-mapping>
+	
+	<!-- User Logout -->
+	<servlet>
+		<servlet-name>LogoutservletbyName</servlet-name>
+		<servlet-class>com.bs.servlet.Logoutservlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutservletbyName</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoadUserServlet</servlet-name>
+		<servlet-class>com.bs.servlet.LoadUserServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoadUserServlet</servlet-name>
+		<url-pattern>/loadusr</url-pattern>
+	</servlet-mapping>	
+	
+    <!-- Add Property -->
+	<servlet>
+		<servlet-name>AddPropertyServlet</servlet-name>
+		<servlet-class>com.bs.servlet.AddPropertyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddPropertyServlet</servlet-name>  
+		<url-pattern>/insertProp</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Display Property -->
+	<servlet>
+		<servlet-name>DisplayPropertyServletByName</servlet-name>
+		<servlet-class>com.bs.servlet.DisplayPropertyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayPropertyServletByName</servlet-name>
+		<url-pattern>/display</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Delete Property -->
+	<servlet>
+		<servlet-name>DeletePropertyServletByName</servlet-name>
+		<servlet-class>com.bs.servlet.DeletePropertyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeletePropertyServletByName</servlet-name>
+		<url-pattern>/deleteprop</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Update Property -->
+	<servlet>
+		<servlet-name>UpdatePropertyServlet</servlet-name>
+		<servlet-class>com.bs.servlet.UpdatePropertyServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdatePropertyServlet</servlet-name>
+		<url-pattern>/updateprop</url-pattern>
+	</servlet-mapping>
+	
+	<!-- update display property -->
+		<servlet>
+		<servlet-name>UpdateDisplayServlet</servlet-name>
+		<servlet-class>com.bs.servlet.UpdateDisplayServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateDisplayServlet</servlet-name>
+		<url-pattern>/updatepropdisplay</url-pattern>
+	</servlet-mapping>
+	
+	<!--  display all property -->
+	<servlet>
+		<servlet-name>DisplayAllPropServlet</servlet-name>
+		<servlet-class>com.bs.servlet.DisplayAllPropServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayAllPropServlet</servlet-name>
+		<url-pattern>/displayallprop</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DisplayPropByPropID</servlet-name>
+		<servlet-class>com.bs.servlet.DisplayPropByPropID</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DisplayPropByPropID</servlet-name>
+		<url-pattern>/displaypropByPropID</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+        <servlet-name>ShowPaymentDetailsServlet</servlet-name>
+        <servlet-class>com.bs.servlet.ShowPaymentDetailsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowPaymentDetailsServlet</servlet-name>
+        <url-pattern>/show</url-pattern>
+    </servlet-mapping>
+
+    <!-- Second servlet -->
+	<servlet>
+        <servlet-name>PaymentInsertServlet</servlet-name>
+        <servlet-class>com.bs.servlet.PaymentInsertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentInsertServlet</servlet-name>
+        <url-pattern>/insert</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Third servlet -->
+    <servlet>
+        <servlet-name>PaymentUpdateServletbyName</servlet-name>
+        <servlet-class>com.bs.servlet.PaymentUpdateServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentUpdateServletbyName</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+		<servlet-name>DeletePayment</servlet-name>
+		<servlet-class>com.bs.servlet.DeletePayment</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeletePayment</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+        <servlet-name>ticketInsert</servlet-name>
+        <servlet-class>com.bs.servlet.ticketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ticketInsert</servlet-name>
+        <url-pattern>/ticketinsert</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>viewTicket</servlet-name>
+        <servlet-class>com.bs.servlet.viewTicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>viewTicket</servlet-name>
+        <url-pattern>/ticketview</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>updateTicket</servlet-name>
+        <servlet-class>com.bs.servlet.updateTicketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateTicket</servlet-name>
+        <url-pattern>/ticketupdate</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+		<servlet-name>deleteTicket</servlet-name>
+		<servlet-class>com.bs.servlet.deleteTicketServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteTicket</servlet-name>
+		<url-pattern>/ticketdeleted</url-pattern>
+	</servlet-mapping>
+	
+	    <servlet>
+		<servlet-name>updateshowServlet</servlet-name>
+		<servlet-class>com.bs.servlet.updateshowServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateshowServlet</servlet-name>
+		<url-pattern>/updateshowby</url-pattern>
+	</servlet-mapping>
+	
+	
+<!--     <servlet> -->
+<!--         <servlet-name>loadservlet</servlet-name> -->
+<!--         <servlet-class>com.bs.LoadUser</servlet-class> -->
+<!--     </servlet> -->
+<!--     <servlet-mapping> -->
+<!--         <servlet-name>loadservlet</servlet-name> -->
+<!--         <url-pattern>/loadServletUser</url-pattern> -->
+<!--     </servlet-mapping> -->
+	
+	
+</web-app>
+
